@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.5rem;
+}
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 4px;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid gray;
+}
+#home img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+#home .name{
+    text-align: center;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+/* Skills */
+#skills{
+    color: #fff;
+    padding: 1rem;
+}
+#skills .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#skills .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+#skills .items .item:hover{
+    color:lime;
+    opacity: 0.4;
+}
+/* Contacts */
+#contact{
+    color: #fff;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 3rem;
+}
+#contact .contact-form ul li a:hover{
+    opacity: 0.8;
+} 
+.lastBtn{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: whitesmoke;
+}
+.lastBtn:hover{
+    color: white;
+    background: #000;
+    
+}
+#experiences{
+    padding: 2rem;
+}
+.experience {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.experience .experience-image {
+    margin-right: 1.5rem;
+    position: relative;
+}
+.experience .experience-image img {
+    border-radius: 5px;
+}
