@@ -1,4 +1,4 @@
- const url = 'https://icanhazdadjoke.com/';
+const url = 'https://icanhazdadjoke.com/';
 const btn = document.querySelector('.btn');
 const result = document.querySelector('.result');
 
