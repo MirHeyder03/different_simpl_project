@@ -19,12 +19,9 @@ form1.addEventListener("submit", function (e) {
 /* Height Converter */
 const form2 = document.querySelector("#form2");
 form2.addEventListener("submit", function (e) {
-  let feet = document.querySelector("#feet");
-  let inches = document.querySelector("#inches");
+  let feet = parseInt(document.querySelector("#feet").value);
+  let inches = parseInt(document.querySelector("#inches").value);
   const results2 = document.querySelector("#results2");
-
-  feet = parseInt(feet.value);
-  inches = parseInt(inches.value);
 
   if (isNaN(feet) || isNaN(inches)) {
     results2.textContent = "Please enter a valid number!";
