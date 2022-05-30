@@ -6,11 +6,11 @@ form1.addEventListener("submit", function (e) {
   const results1 = document.querySelector("#results1");
 
   if (height === "" || height < 0 || isNaN(height)) {
-    results1.innerHTML = "Please provide a valid height";
+    results1.innerHTML = "Please enter a valid height";
   } else if (weight === "" || weight < 0 || isNaN(weight)) {
-    results1.innerHTML = "Please provide a valid weight";
+    results1.innerHTML = "Please enter a valid weight";
   } else {
-    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    const bmi = (weight / ((height * height) / 10000)).toFixed(1);
     results1.innerHTML = `<span>${bmi}</span>`;
     document.querySelector("#height").value = "";
     document.querySelector("#weight").value = "";
