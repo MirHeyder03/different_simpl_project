@@ -16,4 +16,27 @@ form1.addEventListener("submit", function (e) {
 
   e.preventDefault();
 });
+/* Height Converter */
+const form2 = document.querySelector("#form2");
+form2.addEventListener("submit", function (e) {
+  let feet = document.querySelector("#feet");
+  let inches = document.querySelector("#inches");
+  const results2 = document.querySelector("#results2");
 
+  feet = parseInt(feet.value);
+  inches = parseInt(inches.value);
+
+  if (isNaN(feet) || isNaN(inches)) {
+    results2.textContent = "Please enter a valid number!";
+  } else if (feet < 0) {
+    results2.textContent = "Please enter a feet value > 0";
+  } else if (inches < 0 || inches >= 12) {
+    results2.textContent = "Please enter an inch value between 0 and 12";
+  } else {
+    let cm = feet * 30.48 + inches * 2.54;
+    results2.textContent = `${cm} cm`;
+    document.querySelector("#feet").value = "";
+    document.querySelector("#inches").value = "";
+  }
+  e.preventDefault();
+});
