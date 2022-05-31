@@ -1,1 +1,1 @@
-# Whack_a_mole()
+# Whack_a_Mole()
