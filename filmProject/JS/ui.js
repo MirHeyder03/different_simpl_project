@@ -6,7 +6,7 @@ class UI {
       <td><img src="${newFilm.url}" class="img-fluid img-thumbnail"></td>
       <td>${newFilm.title}</td>
       <td>${newFilm.director}</td>
-      <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+      <td><a href="#" id = "delete-film" class = "btn btn-danger">Delete Film</a></td>
       </tr>`;
   }
   static clearInputs(element1, element2, element3) {
@@ -32,7 +32,7 @@ class UI {
           <td><img src="${film.url}" class="img-fluid img-thumbnail"></td>
           <td>${film.title}</td>
           <td>${film.director}</td>
-          <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+          <td><a href="#" id = "delete-film" class = "btn btn-danger">Delete Film</a></td>
       </tr>`;
     });
   }
